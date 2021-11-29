@@ -4,14 +4,15 @@
 const invitati = ['Sara', 'Giuseppe', 'Mario', 'Rosario', 'Alfredo'];
 const nome = prompt('Inserisci il tuo nome');
 let esito = false;
-for (let index = 0; index < invitati.length; index++) {
-    if (nome == invitati[index]) {
+let index = 0;
+while (index < invitati.length && esito == false) {
+    if (invitati[index] == nome) {
         esito = true;
     }
+    index++;
 }
-if (esito == true) {
-    document.getElementById('esito').innerHTML = "Puoi partecipare alla festa";
-}
-else {
-    document.getElementById('esito').innerHTML = "Non puoi partecipare alla festa";
+if (esito) {
+    document.innerHtm('Il tuo nome è nella lista');
+} else { 
+    document.writeln('Il tuo nome non è nella lista');
 }
