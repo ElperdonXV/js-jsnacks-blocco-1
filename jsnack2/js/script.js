@@ -12,7 +12,7 @@ while (index < invitati.length && esito == false) {
     index++;
 }
 if (esito) {
-    document.innerHtm('Il tuo nome è nella lista');
+    document.writeln('Il tuo nome è nella lista');
 } else { 
     document.writeln('Il tuo nome non è nella lista');
 }
